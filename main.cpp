@@ -89,13 +89,13 @@ void displayCourseInfo() {
 
 // ==================== Main Function ====================
 int main() {
-   Person p1* = new Student();
-	Person p2* = new Instructor();
-	Course c1* = new Course();
-   p1.display();
-   p2.display();
-   c1.displayCourseInfo();
-   c1.addStduent();
+Student p1* = new Student();
+Instructor p2* = new Instructor();
+Course c1* = new Course();
+p1.display();
+p2.display();
+c1.displayCourseInfo();
+c1.addStduent();
    
 
     
