@@ -1,16 +1,16 @@
-#ifndef STUDENT_H
-#define STUDENT_H
+#ifndef Instructor_H
+#define Instructor_H
 #include "Person.h"
 #include <string>
-class Student : public Person
+class Instructor: public Person
 {
 private:
-	int yearLevel;
-	std::string major;
+	std::string name;
+	int experienceYears;
 public:
-	Student();
-	Student(int yearLevel, std::string major);
-	~Student();
+	Instructor();
+	Instructor(std::string name, int experienceYears);
+	~Instructor();
 	void display();
 };
 #endif
