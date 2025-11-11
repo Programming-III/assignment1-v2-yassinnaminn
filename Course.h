@@ -1,16 +1,21 @@
-#ifndef Instructor_H
-#define Instructor_H
-#include "Person.h"
+#ifndef COURSE_H
+#define COURSE_H
 #include <string>
-class Instructor: public Person
+class Course
 {
 private:
-	std::string name;
-	int experienceYears;
+	std::string courseCode;
+	std::string courseName;
+	int maxStudents;
+	Student* student;
+	int currentStudents;
 public:
-	Instructor();
-	Instructor(std::string name, int experienceYears);
-	~Instructor();
-	void display();
+	Course();
+	Course(std::string courseCode, std::string courseName, int maxStudents, Student* student,int currentStudents);
+	~Course();
+	void addStudent(const Student& s);
+	void displayCourseInfo();
+
+
 };
 #endif
